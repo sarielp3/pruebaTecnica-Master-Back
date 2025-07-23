@@ -45,6 +45,19 @@ namespace PruebaT_MasterGroup.Business
             await _repo.DeleteClienteAsync(id);
         }
 
+        public async Task<Clientes> IniciarSesion(string correo, string contrasena)
+        {
+            if (string.IsNullOrEmpty(correo))
+            {
+                throw new ArgumentException("El correo es obligatorio.");
+            }
+            if (string.IsNullOrEmpty(contrasena))
+            {
+                throw new ArgumentException("La contrasena es obligatoria.");
+            }
+            return await _repo.IniciarSesion(correo, contrasena);
+        }
+
         public async Task<Clientes> ObtenerPorIdAsync(int id)
         {
             return await _repo.GetByIdClienteAsync(id);

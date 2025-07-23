@@ -32,5 +32,11 @@ namespace PruebaT_MasterGroup.Controllers
             //return CreatedAtAction(nameof(Get), new { id = cliente.ClienteId }, cliente);
             return Ok("Cliente :" + cliente.Nombre + " " + cliente.Apellidos + " creado con exito");
         }
+
+        [HttpPost("IniciarSesion/")]
+        public async Task<IActionResult> GetUsuarioPorId([FromBody] IniciarSesion datosCliente)
+        {
+            return Ok(await _service.IniciarSesion(datosCliente.Correo,datosCliente.Contrasena));
+        }
     }
 }

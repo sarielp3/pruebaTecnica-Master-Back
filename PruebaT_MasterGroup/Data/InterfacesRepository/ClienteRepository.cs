@@ -2,6 +2,7 @@
 using PruebaT_MasterGroup.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PruebaT_MasterGroup.Data.InterfacesRepository
@@ -35,6 +36,11 @@ namespace PruebaT_MasterGroup.Data.InterfacesRepository
         public async Task<Clientes> GetByIdClienteAsync(int id)
         {
             return await _context.Clientes.Include(t => t.Compras).FirstOrDefaultAsync(t => t.ClienteId == id);
+        }
+
+        public async Task<Clientes> IniciarSesion(string correo, string contrasena)
+        {
+            return await _context.Clientes.Where(c => c.Correo == correo).Where(c => c.Contrasena == contrasena).SingleOrDefaultAsync();
         }
     }
 }

@@ -11,5 +11,7 @@ namespace PruebaT_MasterGroup.Business
         Task CrearAsync(Clientes cliente);
         Task ActualizarAsync(Clientes cliente);
         Task EliminarAsync(int id);
+
+        Task<Clientes> IniciarSesion(string correo, string contrasena);
     }
 }

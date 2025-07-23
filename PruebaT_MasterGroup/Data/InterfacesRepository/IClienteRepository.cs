@@ -11,5 +11,7 @@ namespace PruebaT_MasterGroup.Data.InterfacesRepository
 
         Task AddClienteAsync(Clientes cliente);
         Task DeleteClienteAsync(int id);
+
+        Task<Clientes> IniciarSesion(string correo,string contrasena);
     }
 }

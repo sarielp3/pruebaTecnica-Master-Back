@@ -94,3 +94,4 @@ C:\Users\mindo\source\repos\PruebaT_MasterGroup\PruebaT_MasterGroup\obj\Debug\ne
 C:\Users\mindo\source\repos\PruebaT_MasterGroup\PruebaT_MasterGroup\obj\Debug\netcoreapp3.1\PruebaT_MasterGroup.dll
 C:\Users\mindo\source\repos\PruebaT_MasterGroup\PruebaT_MasterGroup\obj\Debug\netcoreapp3.1\PruebaT_MasterGroup.pdb
 C:\Users\mindo\source\repos\PruebaT_MasterGroup\PruebaT_MasterGroup\obj\Debug\netcoreapp3.1\PruebaT_MasterGroup.genruntimeconfig.cache
+C:\Users\mindo\source\repos\PruebaT_MasterGroup\PruebaT_MasterGroup\obj\Debug\netcoreapp3.1\PruebaT_MasterGroup.sourcelink.json

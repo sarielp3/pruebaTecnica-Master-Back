@@ -28,14 +28,14 @@ namespace PruebaT_MasterGroup.Controllers
         public async Task<IActionResult> ActualizarArticuloCarrito([FromBody] ClienteArticulo articulo)
         {
             await _service.ActualizarCarrito(articulo);
-            return Ok("Articulo actualizado con exito!");
+            return Ok(new { mensaje = "Articulo actualizado con exito!" });
         }
 
         [HttpPost]
         public async Task<IActionResult> AgregarArticuloCarrito([FromBody] ClienteArticulo articulo)
         {
             await _service.CrearArticuloAsync(articulo);
-            return Ok("Articulo agregar al carrito con exito!");
+            return Ok(new { mensaje = "Articulo actualizado con exito!" });
         }
     }
 }

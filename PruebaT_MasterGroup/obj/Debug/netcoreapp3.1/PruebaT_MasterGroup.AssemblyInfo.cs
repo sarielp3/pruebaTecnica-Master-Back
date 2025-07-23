@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaT_MasterGroup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d76a969d977eef77c9260c8ce417126b5d0302cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaT_MasterGroup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaT_MasterGroup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
